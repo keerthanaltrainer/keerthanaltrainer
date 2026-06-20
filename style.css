@@ -389,6 +389,13 @@ footer p{
     object-fit:contain;
 }
 
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#0B2341;
+}
+
 @media (max-width: 768px){
 
     .logo img{
@@ -396,17 +403,12 @@ footer p{
     }
 
     nav{
-        flex-direction:column;
-        padding:10px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px 20px;
     }
-
-    nav ul{
-        gap: 10px;
-        margin-top:10px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
+    
     nav ul li a{
         font-size:14px;
     }
@@ -468,8 +470,9 @@ footer p{
     }
 
     .hero h2{
-        font-size:1.2rem;
-        line-height:1.5;
+        font-size:1.5rem;
+        line-height:1.6;
+        padding:0 15px;
     }
 
     .hero p{
@@ -520,6 +523,40 @@ footer p{
 
     .testimonial-card h4{
         font-size:18px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav ul{
+        display:none;
+        flex-direction:column;
+        width:220px;
+        position:absolute;
+        top: 80px;
+        right: 20px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        text-align:center;
+        border-radius:10px;
+        background:white;
+        padding:15px;
+    }
+
+    nav ul.active{
+        display:flex;
+    }
+
+    .download-btn{
+        background:#6C3CFF;
+    }
+
+    .linkedin-btn{
+        background:#0077B5;
+    }
+
+    .contact-btn{
+        background:#00A86B;
     }
 
 }
@@ -619,4 +656,11 @@ footer p{
 
 .back-to-top:hover{
     background:#1f2f70;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#0B2341;
 }
