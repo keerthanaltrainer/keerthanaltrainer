@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keerthana L - Corporate Trainer, Behavioural Transformation Specialist, Employability and Workplace Readiness Facilitator.">
 
     <title>Keerthana L | Corporate Trainer</title>
     <link rel="stylesheet" href="style.css">
@@ -15,15 +16,19 @@
 
 <nav>
     <div class="logo">
-    <img src="images/LOGO.jpeg" alt="Logo">
-</div>
+        <img src="images/LOGO.jpeg" alt="Logo">
+    </div>
 
-    <ul>
+    <div class="menu-toggle" id="toggleMenu()">
+        ☰
+    </div>
+
+    <ul id="nav-Menu">
         <li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#programs">Programs</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -284,6 +289,15 @@ I believe meaningful transformation occurs when individuals are given opportunit
 <a href="#home" class="back-to-top">
 ↑
 </a>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+</script>
 
 </body>
 </html>
