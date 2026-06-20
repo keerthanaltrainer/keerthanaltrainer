@@ -394,12 +394,17 @@ footer p{
     font-size:32px;
     cursor:pointer;
     color:#0B2341;
+    position:absolute;
+    right: 20px;
+    top: 25px;
+    z-index:1000;
 }
 
 @media (max-width: 768px){
 
     .logo img{
         height:70px;
+        width:auto;
     }
 
     nav{
@@ -458,7 +463,7 @@ footer p{
         display:flex;
         flex-direction:column;
         align-items:center;
-        gap:15px;
+        gap:20px;
     }
 
     .hero-buttons .btn{
